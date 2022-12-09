@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Jogo da Velha </title>
+</head>
+<body>
+
+        <div class="header">Jogo da Velha
+        </div>
+    <div class="main">
+       <section id="cadastro">
+            
+            <a href="#" class="button new" onclick="Modal.open()">Novo Jogo</a>
+          
+        </section>
+        <div class="main-header hidden">
+
+              <div class="info hbox">Nome do Jogador</div>
+              <div class="info hbox">Escolha</div>
+              <div class="info hbox">Placar</div>
+
+                <div id="playerX" class="player1 hbox" ></div>
+                 <div id="escolhaX" class="ponto1  hbox"></div>
+                <div id="placarX" class="ponto1  hbox"></div>
+                       
+                <div id="playerO" class="player2 hbox"></div>
+                <div id="escolhaO"class="ponto2 hbox"></div>
+                <div id="placarO"class="ponto2 hbox"></div>
+         </div>
+                        
+         
+            <div class="container-box">
+            <div class="suavez" id="suaVez"></div>
+           
+                <div class="main-box">
+            
+                    <div id="box1" class="box box1 "></div>
+                    <div id="box2" class="box box2 box-r"></div>
+                    <div id="box3" class="box box3"></div>
+                    <div id="box4" class="box box4  box-s"></div>
+                    <div id="box5" class="box box5 box-r box-s"></div>
+                    <div id="box6" class="box box6  box-s"></div>
+                    <div id="box7" class="box box7 "></div>
+                    <div id="box8" class="box box8 box-r"></div>
+                    <div id="box9" class="box box9"></div>
+                    
+                </div>
+           
+               
+            </div>
+            
+    </div>
+    
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="form">
+                
+                <form action="">
+                    <div class="input-group">
+                        <label class="sr-only" for="nome1"><strong>Player 1</strong>
+                        </label>
+                        <input type="text"
+                                id="nome1"
+                                name="nome1"
+                                placeholder="nome do 1º jogador"
+                                
+                        />
+                      
+                        <select id="choose1">
+                            <option value="X">X</option>
+                            <option value="O">O</option>
+                            
+                        </select>
+                          <div class="separador"></div>
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="nome2"><strong>Player 2</strong>
+                        </label>
+                        <input type="text"
+                                id="nome2"
+                                name="nome2"
+                                placeholder="nome do 2º jogador"
+                        />
+                      <select id="choose2">
+                            
+                            <option value="O">O</option>
+                            <option value="X">X</option>
+                        </select>
+                    </div>
+                    <div class="input actions">
+                        <button id="iniciar" type="button" class="iniciar">Iniciar</button>
+                        <div class="separador"></div>
+                        <a href="#" id="cancelar"
+                        class="button cancel">Cancelar</a>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modalVencedor">
+       <div class="modal">
+       <p id="vencedor"></p>
+        <div class="input actions">
+                        <button id="continuar" type="button" class="iniciar">Continuar</button>
+                        <div class="separador"></div>
+                        <a href="#" id="parar"
+                        class="button cancel">Parar</a>
+                    </div>
+       </div>    
+    </div>
+     
+   <div class="footer">
+   <p>VitordSmota &copy;</p>
+   </div>
+   
+</body>
+<script src="./script.js"></script>
+
+</body>
+</html>
